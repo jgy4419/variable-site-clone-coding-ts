@@ -41,6 +41,7 @@ export const Musics = styled.div`
     height: 80px;
     box-shadow: 5px 5px 5px lightgrey;
     transition: .3s;
+    border-radius: 20px;
     &:hover {
         transform: translateY(-10px);
     }
@@ -48,22 +49,23 @@ export const Musics = styled.div`
 
 export const MusicDetail = styled.div`
     position: absolute;
-    width: 400px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: rgba(0, 0, 0, .5);
     gap: 3%;
     border-radius: 20px;
 `
 
 export const BackImg = styled.div<{backImage: string}>`
     position: absolute;
-    width: 400px;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     background-image: url(${(props) => props.backImage});
     filter: blur(3px);
-    border-radius: 10px;
+    border-radius: 20px;
 `
 
 export const MusicImg = styled.img`
@@ -79,7 +81,7 @@ export const MusicContent = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-    color: #333;
+    color: #fff;
 `
 
 export const Name = styled.h3`
@@ -89,7 +91,7 @@ export const Name = styled.h3`
 export const Artist = styled.div`
     font-size: 12px;
     margin-top: 5px;
-    color: grey;
+    color: lightgrey;
     font-weight: 700;
 `
 
@@ -97,7 +99,7 @@ export const Album = styled.p`
     font-size: 12px;
     font-weight: 600;
     // margin-top: 10px;
-    color: grey;
+    color: lightgrey;
 `
 
 export const Player = styled.div`
