@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Card1Container = styled.div`
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
+    background-color: #eeeeee;
 `
 
 export const Card1Inner = styled.div`
@@ -50,8 +51,8 @@ export const Card1Content = styled.div`
     background-repeat: no-repeat;
     background-position: 50%;
     object-fit: cover;
-    width: 25%;
-    height: 20%;
+    width: 350px;
+    height: 200px;
     border: 3px solid #fff;
     border-radius: 20px;
     box-sizing: border-box;
