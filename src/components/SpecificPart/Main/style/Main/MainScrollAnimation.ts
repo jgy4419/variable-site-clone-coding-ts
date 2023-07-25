@@ -29,8 +29,9 @@ export const MainScrollSubText = styled.p`
 `
 
 export const PartItems = styled.div`
-    width: 200px;
-    height: 300px;
+    position: relative;
+    width: 20%;
+    height: 25%;
     background-color: #2D4356;
     display: flex;
     gap: 10px;
@@ -38,32 +39,31 @@ export const PartItems = styled.div`
     font-size: 20px;
     color: #fff;
     font-weight: 700;
-    transition: .5s;
+    // transition: .5s;
     padding: 20px;
     box-sizing: border-box;
     &:hover {
-        position: absolute;
+        // position: absolute;
+        display: block;
         width: 100vw;
         height: 60vh;
+        transition: .5s;
     }
 `;
 
 export const PartItemsContainer = styled.div`
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    // background-color: #eee;
     margin: auto;
     &:hover > {
         &:not(:hover) {
-            // display:none;
-            width: 0px;
-            height: 0px;
-            // opacity: 0;
-            // transition: .2s;
+            // display: none;
+            width: 0%;
+            height: 0%;
         }
     }
 `;

@@ -1,10 +1,15 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import * as S from './style/Main/MainScrollAnimation';
 
 const MainScrollAnimation = () => {
     const [contentParts, setContentParts] = useState({
         title: ['Card', 'Button', 'Music', 'Login'],
+        description: [
+            ''
+        ],
     });
+    const item = useRef(null);
+
     return (
         <S.MainScrollAnimationContainer>
             <S.MainScrollAnimationInner>
@@ -18,7 +23,7 @@ const MainScrollAnimation = () => {
                 {
                     contentParts.title.map((title, index) => {
                         return(
-                            <S.PartItems key={index}>
+                            <S.PartItems ref={item} key={index}>
                                 <S.Circle/>
                                 {title}
                             </S.PartItems>
