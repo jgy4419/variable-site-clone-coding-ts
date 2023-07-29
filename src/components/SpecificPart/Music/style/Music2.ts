@@ -33,11 +33,38 @@ export const MusicDetail = styled.div<{musicstate: string}>`
     transition: .3s;
     text-align: center;
     padding-top: 20px;
+    transform: ${props => props.musicstate};
+    box-sizing: content-box;
+`;
+
+export const MusicDetailTitle = styled.p`
     font-weight: 700;
     font-size: 14px;
     color: #333;
-    transform: ${props => props.musicstate};
-    box-sizing: content-box;
+`;
+
+export const MusicDetailRange = styled.input`  
+    overflow: hidden;
+    -webkit-appearance: none;
+    // margin: 10px 0;
+    margin: 5px 0;
+    width: 50%;
+    background: transparent;
+    border-radius: 20px;
+    &::-webkit-slider-runnable-track {
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid #333;
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none; // 기본 스타일인 원 제거
+        width: 10px;
+        height: 10px;
+        background: #333;
+        box-shadow: 1px 1px 7px #d16a6e;
+        cursor: pointer;
+        box-shadow: -100.2vw 0 0 100vw #333;
+    }
 `;
 
 export const MusicContainer = styled.div`
