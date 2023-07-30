@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import  {useState, useEffect} from 'react';
 import * as S from './style/Music2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faBackward, faForward } from '@fortawesome/free-solid-svg-icons';
@@ -17,7 +17,10 @@ const Music2 = () => {
     }, [musicState]);
 
     const musicPlaying = () => {
-        let musicPlay
+        let musicPlay;
+
+        if(musicTime === choiceMusic.playTime) musicHandler();
+        
         if(musicState === true) {
             musicPlay = setInterval(() => {
                 setMusicTime(time => time+=1);

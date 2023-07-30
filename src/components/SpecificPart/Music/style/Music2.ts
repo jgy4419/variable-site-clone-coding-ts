@@ -46,7 +46,6 @@ export const MusicDetailTitle = styled.p`
 export const MusicDetailRange = styled.input`  
     overflow: hidden;
     -webkit-appearance: none;
-    // margin: 10px 0;
     margin: 5px 0;
     width: 50%;
     background: transparent;
