@@ -6,6 +6,7 @@ import Card from '../components/SpecificPart/card/Card';
 import SnackBar from '../components/SpecificPart/snackBar/SnackBar';
 import Button from '../components/SpecificPart/button/Button';
 import Accordion from '../components/SpecificPart/accordion/Accordion';
+import Footer from '../components/SpecificPart/footer/Footer';
 
 const Router = () => {
     return (
@@ -17,6 +18,7 @@ const Router = () => {
             <Route path='/SnackBar' element={<SnackBar/>}/>
             <Route path='/button' element={<Button/>}/>
             <Route path='/Accordion' element={<Accordion/>}/>
+            <Route path='/footer' element={<Footer/>}/>
         </Routes>
     )
 }
