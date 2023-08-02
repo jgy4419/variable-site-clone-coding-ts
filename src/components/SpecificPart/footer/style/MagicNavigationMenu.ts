@@ -15,13 +15,13 @@ export const MagicNavigationMenuFooter = styled.footer`
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 70px;
     // background-color: #eee;
 `;
 
 export const MagicNavigationMenuBall = styled.div<{location: number}>`
     // position: absolute;
-    // bottom: 70px;
+    // bottom: 30px;
     // width: 70px;
     // height: 70px;
     // border-radius: 50%;
@@ -36,19 +36,23 @@ export const MagicNavigationMenus = styled.ul`
     justify-content: space-around;
     align-items: center;
     z-index: 10;
-    background-color: #eee;
+    background-color: #fcfcfc;
 `;
 
 export const MagicNavigationMenu = styled.li<{location: number, backColor: string}>`
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
     transition: .3s;
+    cursor: pointer;
     &:nth-child(${props => props.location}) {
-        transform: translateY(-60px);
+        transform: translateY(-30px);
         background-color: ${props => props.backColor};
-        padding: 20px;
+        padding: 15px;
         border-radius: 50%;
         box-sizing: content-box;
+        color: #fff;
+        box-shadow: 0px 5px 10px 1px ${props => props.backColor};
     }
 `;
