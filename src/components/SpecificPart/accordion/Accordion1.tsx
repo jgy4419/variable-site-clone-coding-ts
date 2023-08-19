@@ -17,19 +17,19 @@ const Accordion = () => {
         <S.AccordionContainer>
             <S.AccordionInner>
                 <S.Accordions>
-                    {
-                        accordions.title.map((title, index) => {
-                            return (
-                                <S.Accordion key={index} accordionState={accordionState}>
-                                    <S.AccordionContent>
-                                        <S.AccordionTitle>{title}</S.AccordionTitle>
-                                        <S.AccordionDescription accordionState={accordionState}>{accordions.description}</S.AccordionDescription>
-                                    </S.AccordionContent>
-                                    <S.AccordionIcon onClick={() => {setAccordionState(state => !state)}}>{accordionState === true ? '-' : '+'}</S.AccordionIcon>
-                                </S.Accordion>
-                            )                            
-                        })
-                    }
+                {
+                    accordions.title.map((title, index) => {
+                        return (
+                            <S.Accordion key={index} accordionState={accordionState}>
+                                <S.AccordionContent>
+                                    <S.AccordionTitle>{title}</S.AccordionTitle>
+                                    <S.AccordionDescription accordionState={accordionState}>{accordions.description}</S.AccordionDescription>
+                                </S.AccordionContent>
+                                <S.AccordionIcon onClick={() => {setAccordionState(state => !state)}}>{accordionState === true ? '-' : '+'}</S.AccordionIcon>
+                            </S.Accordion>
+                        )                            
+                    })
+                }
                 </S.Accordions>
             </S.AccordionInner>
         </S.AccordionContainer>

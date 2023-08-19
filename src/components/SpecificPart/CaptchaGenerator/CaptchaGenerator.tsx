@@ -10,10 +10,6 @@ const CaptchaGenerator = () => {
     );
     const [captchaGeneratorState, setCaptchaGeneratorState] = useState(false);
 
-    useEffect(() => {
-        console.log(captchaGeneratorWriteInputResult);
-    }, []);
-
     const captchaGeneratorWriteInputFunc = (event: React.ChangeEvent<HTMLInputElement>) => {
         setCaptchaGeneratorWriteInputResult(event.target.value);
         console.log(captchaGeneratorWriteInputResult);

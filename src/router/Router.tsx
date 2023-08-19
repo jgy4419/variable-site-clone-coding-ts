@@ -1,6 +1,7 @@
 import {Route, Routes} from 'react-router-dom';
 import Main from '../components/SpecificPart/Main/MainIndex';
 import Music from '../components/SpecificPart/Music/Music';
+import Menu from '../components/SpecificPart/Menu/Menu';
 import Login from '../components/SpecificPart/login/Login';
 import Card from '../components/SpecificPart/card/Card';
 import SnackBar from '../components/SpecificPart/snackBar/SnackBar';
@@ -21,6 +22,7 @@ const Router = () => {
             <Route path='/Accordion' element={<Accordion/>}/>
             <Route path='/footer' element={<Footer/>}/>
             <Route path='/CaptchaGenerator' element={<CaptchaGenerator/>}/>
+            <Route path='/Menu' element={<Menu/>}/>
         </Routes>
     )
 }
