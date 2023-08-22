@@ -53,9 +53,9 @@ export const MenuLink = styled.a<{menu: string}>`
         -webkit-text-stroke: 1px trasnparent;
     }
     &:hover {
+        transition: .5s;
         color: #ffffff;
         -webkit-text-stroke: 1px #212121;
-        transition: 0.25s;
         &:before {
             transform: translate(12px, -12px);
             color: #ff1744;

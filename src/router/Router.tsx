@@ -9,6 +9,7 @@ import Button from '../components/SpecificPart/button/Button';
 import Accordion from '../components/SpecificPart/accordion/Accordion';
 import Footer from '../components/SpecificPart/footer/Footer';
 import CaptchaGenerator from '../components/SpecificPart/CaptchaGenerator/CaptchaGenerator';
+import Etc from '../components/SpecificPart/etc/Etc';
 
 const Router = () => {
     return (
@@ -23,6 +24,7 @@ const Router = () => {
             <Route path='/footer' element={<Footer/>}/>
             <Route path='/CaptchaGenerator' element={<CaptchaGenerator/>}/>
             <Route path='/Menu' element={<Menu/>}/>
+            <Route path='/Etc' element={<Etc/>}/>
         </Routes>
     )
 }
