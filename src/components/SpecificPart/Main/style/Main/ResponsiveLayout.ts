@@ -25,7 +25,7 @@ export const ResponsiveLayoutContents = styled.div`
 export const ResponsiveLayoutContent = styled.div`
     display: flex;
     width: 50%;
-    box-shadow: 5px -1px 5px 2px rgba(0, 0, 0, 0.5);
+    background-color: #eee;
     border-radius: 20px;
     padding: 30px;
 `;
@@ -63,8 +63,7 @@ export const ResponsiveLayoutContentButton = styled.button`
 export const ResponsiveLayoutImage = styled.img`
     width: 30%;
     height: 100%;
-    // border: 1px solid #333;
     border-radius: 20px;
-    margin-top: -30px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-top: -50px;
+    box-shadow: 5px -1px 5px 2px rgba(0, 0, 0, 0.5);
 `;
