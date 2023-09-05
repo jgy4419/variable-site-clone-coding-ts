@@ -12,7 +12,7 @@ export const Card13Inner = styled.div`
     width: 80%;
     height: 100%;
     inset: 0;
-    margin: auto;
+    margin: 100px auto;
 `;
 
 export const Card13BlankContent = styled.div`
