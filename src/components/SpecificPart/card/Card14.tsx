@@ -21,9 +21,8 @@ const Card14 = () => {
                     {
                         contents.map((content, index) => {
                             return (
-                                <S.Card14Content 
-                                style={{backgroundImage: `url('${content.img}')`}}
-                                 key={index}>
+                                <S.Card14Content key={index}>
+                                    <S.Card14Image src={content.img}/>
                                     <S.Card14Animation>
                                         <S.Card14Back/>
                                         <S.Card14ContentTitle>{content.title}</S.Card14ContentTitle>
