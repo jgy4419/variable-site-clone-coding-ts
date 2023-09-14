@@ -44,7 +44,6 @@ export const MenuLink = styled.a<{menu: string}>`
     -ms-user-select: none;
     user-select: none;
     &:before, &:after {
-        // content: '' 에 ''안에 들어가므로 props로 ''안에 적용해주기
         content: '${props => props.menu}';
         position: absolute;
         left: 0;
@@ -57,12 +56,12 @@ export const MenuLink = styled.a<{menu: string}>`
         color: #ffffff;
         -webkit-text-stroke: 1px #212121;
         &:before {
-            transform: translate(12px, -12px);
+            transform: translate(5px, -5px);
             color: #ff1744;
             -webkit-text-stroke: 1px #212121;
         }
         &:after {
-            transform: translate(24px, -24px);
+            transform: translate(10px, -10px);
             color: #4dd0e1;
             -webkit-text-stroke: 1px #212121;
         }

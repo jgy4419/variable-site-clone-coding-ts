@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import * as S from './style/Menu1';
 
-/* 
-    피차일반
-*/
-
 const Menu1 = () => {
     const [menuList, setMenuList] = useState([
         'HOME', 'ABOUT', 'PORTFOLIO', 'TEAM', 'CONTACT'
