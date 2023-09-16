@@ -1,4 +1,5 @@
 import {Route, Routes} from 'react-router-dom';
+
 import Main from '../components/SpecificPart/Main/MainIndex';
 import Music from '../components/SpecificPart/Music/Music';
 import Menu from '../components/SpecificPart/Menu/Menu';
@@ -11,6 +12,9 @@ import Footer from '../components/SpecificPart/footer/Footer';
 import CaptchaGenerator from '../components/SpecificPart/CaptchaGenerator/CaptchaGenerator';
 import Etc from '../components/SpecificPart/etc/Etc';
 import Parallax from "../components/SpecificPart/Parallax/Parallax"
+
+// clone
+import FaceBook from "../components/Clone/FaceBook/index";
 
 const Router = () => {
     return (
@@ -27,6 +31,7 @@ const Router = () => {
             <Route path='/Menu' element={<Menu/>}/>
             <Route path='/Etc' element={<Etc/>}/>
             <Route path="/Parallax" element={<Parallax/>}/>
+            <Route path="/FaceBook" element={<FaceBook/>}/>
         </Routes>
     )
 }
