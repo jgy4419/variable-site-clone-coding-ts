@@ -11,6 +11,7 @@ import Footer from '../components/SpecificPart/footer/Footer';
 import CaptchaGenerator from '../components/SpecificPart/CaptchaGenerator/CaptchaGenerator';
 import Etc from '../components/SpecificPart/etc/Etc';
 import Parallax from "../components/SpecificPart/Parallax/Parallax"
+import HorizontalScroll from "../components/SpecificPart/HorizontalScroll/HorizontalScroll";
 
 const Router = () => {
     return (
@@ -27,6 +28,7 @@ const Router = () => {
             <Route path='/Menu' element={<Menu/>}/>
             <Route path='/Etc' element={<Etc/>}/>
             <Route path="/Parallax" element={<Parallax/>}/>
+            <Route path="/HorizontalScroll" element={<HorizontalScroll/>}/>
         </Routes>
     )
 }
