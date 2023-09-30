@@ -20,11 +20,6 @@ const Card17 = () => {
         }
     ]);
 
-    const contentList = [
-        "Fitst piece of work.",
-        "Second piece of work.",
-        "Third piece of work."
-    ];
     return (
         <S.Card17Container>
             <S.Card17Inner>
@@ -38,17 +33,6 @@ const Card17 = () => {
                                         <S.Card17ContentTitle>{content.title}</S.Card17ContentTitle>
                                         <S.Card17ContentDescriptionBox>
                                             <S.Card17ContentDescription>{content.description}</S.Card17ContentDescription>
-                                                {/* <S.Card17ContentLists>
-                                                    {
-                                                        contentList.map((list, index) => {
-                                                            return (
-                                                                <>
-                                                                    <S.Card17ContentList key={index}>{list}</S.Card17ContentList>
-                                                                </>
-                                                            )
-                                                        })
-                                                    }
-                                                </S.Card17ContentLists> */}
                                         </S.Card17ContentDescriptionBox>
                                     </S.Card17ContentInner>
                                 </S.Card17Content>

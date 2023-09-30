@@ -68,12 +68,6 @@ export const Card17ContentDescription = styled.p`
     text-align: center;
 `;
 
-export const Card17ContentLists = styled.ul`
-`;
-
-export const Card17ContentList = styled.li`
-`;
-
 export const Card17Content = styled.div`
     position: relative;
     width: 250px;
