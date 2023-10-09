@@ -79,4 +79,7 @@ export const PreviewName = styled.p``
 
 export const PreviewAge = styled.p``
 
-export const PreviewDescription = styled.p``
+export const PreviewDescription = styled.p`
+    width: 200px;
+    word-break: break-all;
+`

@@ -1,10 +1,11 @@
-import React from 'react';
 import Information from './Information';
+import LoginAndJoin from './loginAndJoin';
 
 const login = () => {
     return (
         <>
             <Information/>  
+            <LoginAndJoin/>
         </>
     );
 };

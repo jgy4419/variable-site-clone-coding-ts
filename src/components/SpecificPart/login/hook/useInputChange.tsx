@@ -17,7 +17,6 @@ export const useInputChange = () => {
     }
 
     const ageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log('?');
         setInputObj((prev) => ({
                 ...prev,
                 age: e.target.value
@@ -26,7 +25,6 @@ export const useInputChange = () => {
     }
 
     const descriptionChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        console.log('!');
         setInputObj((prev) => ({
                 ...prev,
                 description: e.target.value
