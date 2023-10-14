@@ -12,6 +12,7 @@ import Footer from '../components/SpecificPart/footer/Footer';
 import CaptchaGenerator from '../components/SpecificPart/CaptchaGenerator/CaptchaGenerator';
 import Etc from '../components/SpecificPart/etc/Etc';
 import Parallax from "../components/SpecificPart/Parallax/Parallax"
+import ImageGalleries from "../components/SpecificPart/ImageGalleries/ImageGalleries";
 
 // clone
 import FaceBook from "../components/Clone/FaceBook/index";
@@ -32,6 +33,7 @@ const Router = () => {
             <Route path='/Etc' element={<Etc/>}/>
             <Route path="/Parallax" element={<Parallax/>}/>
             <Route path="/FaceBook" element={<FaceBook/>}/>
+            <Route path="/ImageGalleries" element={<ImageGalleries/>}/>
         </Routes>
     )
 }
