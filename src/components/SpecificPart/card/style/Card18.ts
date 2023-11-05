@@ -25,7 +25,7 @@ export const Card18Image = styled.img`
     height: 50%;
     transform: translateX(50%);
     border-radius: 20px;
-    transition: .3s;
+    transition: 1s;
 `;
 
 export const Card18ContentInner = styled.div`
