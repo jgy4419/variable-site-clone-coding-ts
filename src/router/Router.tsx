@@ -13,6 +13,7 @@ import CaptchaGenerator from '../components/SpecificPart/CaptchaGenerator/Captch
 import Etc from '../components/SpecificPart/etc/Etc';
 import Parallax from "../components/SpecificPart/Parallax/Parallax"
 import ImageGalleries from "../components/SpecificPart/ImageGalleries/ImageGalleries";
+import VerticalTabs from "../components/SpecificPart/VerticalTabs/index";
 
 // clone
 import FaceBook from "../components/Clone/FaceBook/index";
@@ -34,6 +35,7 @@ const Router = () => {
             <Route path="/Parallax" element={<Parallax/>}/>
             <Route path="/FaceBook" element={<FaceBook/>}/>
             <Route path="/ImageGalleries" element={<ImageGalleries/>}/>
+            <Route path="/VerticalTabs" element={<VerticalTabs/>}/>
         </Routes>
     )
 }
