@@ -14,6 +14,7 @@ import Etc from '../components/SpecificPart/etc/Etc';
 import Parallax from "../components/SpecificPart/Parallax/Parallax"
 import ImageGalleries from "../components/SpecificPart/ImageGalleries/ImageGalleries";
 import VerticalTabs from "../components/SpecificPart/VerticalTabs/index";
+import Concepts from "../components/SpecificPart/Concepts/Concepts";
 
 // clone
 import FaceBook from "../components/Clone/FaceBook/index";
@@ -36,6 +37,7 @@ const Router = () => {
             <Route path="/FaceBook" element={<FaceBook/>}/>
             <Route path="/ImageGalleries" element={<ImageGalleries/>}/>
             <Route path="/VerticalTabs" element={<VerticalTabs/>}/>
+            <Route path="/Concepts" element={<Concepts/>}/>
         </Routes>
     )
 }
