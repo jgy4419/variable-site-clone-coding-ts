@@ -20,6 +20,8 @@ const Card17 = () => {
         }
     ]);
 
+    
+
     return (
         <S.Card17Container>
             <S.Card17Inner>
