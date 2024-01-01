@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as S from "./style/Card21";
 
 const Card20 = () => {
-    const [contents, setContents] = useState([
+    const contents = [
         {
             img: 'https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F00%2Fab%2F94%2F00ab944aabd4c388559e7ebcfdd9e562.jpg&type=sc960_832',
             name: 'JGY_98',
@@ -23,7 +23,7 @@ const Card20 = () => {
             name: 'Test_02',
             work: "BackEnd"
         }
-    ]);
+    ];
     return (
         <S.Container>
             <S.Inner>
