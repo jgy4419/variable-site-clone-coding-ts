@@ -15,6 +15,7 @@ import Parallax from "../components/SpecificPart/Parallax/Parallax"
 import ImageGalleries from "../components/SpecificPart/ImageGalleries/ImageGalleries";
 import VerticalTabs from "../components/SpecificPart/VerticalTabs/index";
 import Concepts from "../components/SpecificPart/Concepts/Concepts";
+import Input from "../components/SpecificPart/Input/Input";
 
 // clone
 import FaceBook from "../components/Clone/FaceBook/index";
@@ -38,6 +39,7 @@ const Router = () => {
             <Route path="/ImageGalleries" element={<ImageGalleries/>}/>
             <Route path="/VerticalTabs" element={<VerticalTabs/>}/>
             <Route path="/Concepts" element={<Concepts/>}/>
+            <Route path="/Input" element={<Input/>} />
         </Routes>
     )
 }
