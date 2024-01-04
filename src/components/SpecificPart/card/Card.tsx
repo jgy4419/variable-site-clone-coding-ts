@@ -19,7 +19,6 @@ import Card18 from "./Card18";
 import Card19 from "./Card19";
 import Card20 from "./Card20";
 import Card21 from "./Card21";
-import Card22 from "./Card22";
 
 const Card = () => {
     return (
@@ -45,7 +44,6 @@ const Card = () => {
             <Card19/>
             <Card20/>
             <Card21/>
-            <Card22/>
         </>
     );
 };
