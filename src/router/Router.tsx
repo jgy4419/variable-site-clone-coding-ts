@@ -20,7 +20,6 @@ import Concepts from "../components/SpecificPart/Concepts/Concepts";
 import FaceBook from "../components/Clone/FaceBook/index";
 
 const Router = () => {
-    console.log("!");
     return (
         <Routes>
             <Route path='/' element={<Main/>} />
