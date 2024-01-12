@@ -21,6 +21,7 @@ import Card20 from "./Card20";
 import Card21 from "./Card21";
 import Card22 from "./Card22";
 import Card23 from './Card23';
+import Card24 from "./Card24";
 
 const Card = () => {
     return (
@@ -48,6 +49,7 @@ const Card = () => {
             <Card21/>
             <Card22/>
             <Card23/>
+            <Card24/>
         </>
     );
 };
