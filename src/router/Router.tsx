@@ -15,6 +15,7 @@ import Parallax from "../components/SpecificPart/Parallax/Parallax"
 import ImageGalleries from "../components/SpecificPart/ImageGalleries/ImageGalleries";
 import VerticalTabs from "../components/SpecificPart/VerticalTabs/index";
 import Concepts from "../components/SpecificPart/Concepts/Concepts";
+import List from "../components/SpecificPart/List/List";
 import Modal from "../components/SpecificPart/Modal/index";
 
 // clone
@@ -39,6 +40,7 @@ const Router = () => {
             <Route path="/ImageGalleries" element={<ImageGalleries/>}/>
             <Route path="/VerticalTabs" element={<VerticalTabs/>}/>
             <Route path="/Concepts" element={<Concepts/>}/>
+            <Route path="/list" element={<List/>}/>
             <Route path="/Modal" element={<Modal/>}/>
         </Routes>
     )
