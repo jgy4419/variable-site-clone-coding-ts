@@ -1,44 +1,65 @@
 import React, { useState } from 'react';
-import * as S from './style/Accordion2';
+import * as S from "./style/Accordion2";
 
-// Expandable Horizantal Accordian
 const Accordion2 = () => {
-    const [content, setContent] = useState({
-        title: ['Leafs', 'Fruits', 'Flowers'],
-        description: [
-            'Leafs Content Description. Leafs Content Description. Leafs Content Description.', 
-            'Fruits Content Description. Fruits Content Description. Fruits Content Description.', 
-            'Flowers Content Description. Flowers Content Description. Flowers Content Description.'
-        ],
-        button: 'Read More',
-        mainColor: ['green', 'red', 'skyblue'],
-        image: [
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFC0AMXNoBOA22Rom9E2FrpnExHdRGJr8OXLO9AqnO&s',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_3E6uKOY_m_ZMS4c1TJYZeEMmJccCOip08u2XoNcWTJaE6Opm3ZKgSdO726FiuYbEFD4&usqp=CAU',
-            'https://img.freepik.com/free-vector/gradient-pastel-sky-background_52683-60514.jpg'
-        ]
-    });
+    const [accordions, setAccordions] = useState([
+        {
+            title: "ACCORDION 01",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing edit. Similtique, magui! Lorem ipsum dolor sit amet consectetur ..",
+            detailState: false
+        },
+        {
+            title: "ACCORDION 02",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing edit. Similtique, magui! Lorem ipsum dolor sit amet consectetur ..",
+            detailState: false
+        },
+        {
+            title: "ACCORDION 03",
+            description: "Lorem ipsum, dolor sit amet consectetur adipisicing edit. Similtique, magui! Lorem ipsum dolor sit amet consectetur ..",
+            detailState: false
+        }
+    ]);
+
+    const accordionClickHandler = (index: number) => {
+        let copyAccordion = [...accordions];
+        
+        for(let i = 0; i < copyAccordion.length; i++) {
+            if(copyAccordion[i].detailState)
+                copyAccordion[i].detailState = false;
+        }
+
+        copyAccordion[index].detailState = true;
+        setAccordions(copyAccordion);
+    }
+
     return (
-        <S.Accordian2Container>
-            <S.Accordian2Inner>
-                <S.Accordian2Contents>
+        <S.Container>
+            <S.Inner>
+                <S.AccordionContainer>
+                    <S.AccordionTitle>ACCORDIONS</S.AccordionTitle>
+                    <S.AccordionLine />
+                    <S.Accordions>
                     {
-                        content.image.map((img, index) => {
+                        accordions.map((accordion, index) => {
                             return (
-                                <S.Accordian2Content key={index}>
-                                    <S.ContentImage src={img}/>
-                                    <S.ContentInner>
-                                        <S.ContentTitle>{content.title[index]}</S.ContentTitle>
-                                        <S.ContentColor>{content.mainColor[index]}</S.ContentColor>
-                                        <S.ContentDescription>{content.description[index]}</S.ContentDescription>
-                                    </S.ContentInner>
-                                </S.Accordian2Content>
+                                <S.Accordion key={index}>
+                                    <S.AccordionHeader onClick={() => accordionClickHandler(index)}>
+                                        <S.Titles>
+                                            <S.Title1>{accordion.title}</S.Title1>
+                                            <S.Title2>{accordion.title}</S.Title2>
+                                        </S.Titles>
+                                        <S.DetailBtn>{accordion.detailState === true ? "-" : "+"}</S.DetailBtn>
+                                    </S.AccordionHeader>
+                                    <S.Description detailState={accordion.detailState}>{accordion.description}</S.Description>
+                                    <S.AccordionLine />
+                                </S.Accordion>
                             )
                         })
-                    }
-                </S.Accordian2Contents>
-            </S.Accordian2Inner>
-        </S.Accordian2Container>
+                    } 
+                    </S.Accordions>
+                </S.AccordionContainer>
+            </S.Inner>
+        </S.Container>
     );
 };
 

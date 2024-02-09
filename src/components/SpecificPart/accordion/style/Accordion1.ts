@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AccordionContainer = styled.div`
     position: relative;
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     color: #333;
 `;
 

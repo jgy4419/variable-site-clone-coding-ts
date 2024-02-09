@@ -1,70 +1,100 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const Accordian2Container = styled.div`
+export const Container = styled.div`
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
 `;
 
-export const Accordian2Inner = styled.div`
+export const Inner = styled.div`
     position: absolute;
+    width: 80%;
+    height: 100%;
+    inset: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const AccordionContainer = styled.div`
+    width: 800px;
+    height: 100%;
+    color: #444;
+`;
+
+export const AccordionTitle = styled.h1`
+    font-size: 50px;
+    font-weight: 500;
+`;
+
+export const AccordionLine = styled.div`
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+`;
+
+export const Accordions = styled.div`
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 50px;
+    gap: 30px;
 `;
 
-export const Accordian2Contents = styled.div`
-    display: flex;
+export const AccordionHeader = styled.div`
     width: 100%;
-    height: 1500px;
-    justify-content: center;
-    align-items: center;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
 `;
 
-export const ContentImage = styled.img`
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    transition: .3s;
-    
+export const Titles = styled.div`
 `;
 
-export const ContentInner = styled.div`
-    position: absolute;
-    top: 0;
-    color: #fff;
+export const Title1 = styled.h2`
+    font-weight: 500;
+    transition: .3s;
+`;
+export const Title2 = styled.h2`
+    font-weight: 500;
+    transition: .3s;
+`;
+
+export const Description = styled.p<{detailState: boolean}>`
+    height: ${props => props.detailState === true ? "50px" : "0px"};
+    overflow: hidden;
     transition: .5s;
+`;
+
+export const Accordion = styled.div`
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    transform: translateX(100%);
-    opacity: 0;
-`;
-
-export const ContentTitle = styled.h1`
-    margin-left: -50px;
-    font-size: 80px;
-`;
-
-export const ContentColor = styled.p`
-
-`;
-
-export const ContentDescription = styled.p`
-`;
-
-export const Accordian2Content = styled.div`
-    position: relative;
-    width: 100%;
+    transition: 1s;
     &:hover {
-        ${ContentImage} {
-            transform: translateX(-120px);
+        color: grey;
+        ${Title1} {
+            transform: translateY(-30px);
         }
-        ${ContentInner} {
-            z-index: 100;
-            opacity: 1;
-            transform: translateX(50%);
+        ${Title2} {
+            transform: translateY(-30px);
         }
+        // ${Description} {
+        //     height: 50px;
+        // }
     }
+`;
+
+export const DetailBtn = styled.button`
+    border: 0;
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 20px;
 `;
