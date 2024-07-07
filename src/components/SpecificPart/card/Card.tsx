@@ -24,6 +24,14 @@ import Card23 from './Card23';
 import Card24 from "./Card24";
 import Card25 from './Card25';
 import Card26 from './Card26';
+import Card28 from './Card28';
+import Card29 from './Card29';
+import Card30 from './Card30';
+import Card31 from './Card31';
+import Card32 from './Card32';
+import Card33 from './Card33';
+import Card34 from './Card34';
+import Card35 from './Card35';
 
 const Card = () => {
     return (
@@ -53,7 +61,15 @@ const Card = () => {
             <Card23/>
             <Card24/>
             <Card25/>
-            <Card26/>   
+            <Card26/>
+            <Card28/>
+            <Card29/>
+            <Card30/>
+            <Card31/>
+            <Card32/>
+            <Card33/>
+            <Card34/>
+            <Card35/>
         </>
     );
 };
